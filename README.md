@@ -1,12 +1,10 @@
 # 🍕 Pizza Sales Analytics: SQL Slicing & Dicing 🔍
 
-![Pizza Analytics Banner](https://example.com/pizza_analytics_banner.jpg)
+## Data - Kaggle(https://www.kaggle.com/datasets/keremkarayaz/coffee-shop-sales/data)
 
 ## 🚀 Project Overview
 
-Dive into the world of pizza sales with this SQL-powered analytics project! Uncover the secret ingredients of business success through data-driven insights.
-
-### 🧠 Created by: Vipul Saini
+Dive into the store of a Pizza outlet sales with this SQL-powered analytics project! Uncover the secret ingredients of business success through data-driven insights.
 
 ## 🌟 Key Features
 
@@ -26,8 +24,7 @@ Dive into the world of pizza sales with this SQL-powered analytics project! Unco
 
 ## 🛠️ Tech Stack
 
-- SQL (Flavor: [MySQL/PostgreSQL/etc.])
-- [Any additional tools or libraries]
+- MySQL
 
 ## 🔍 Data Deep Dive
 
@@ -40,10 +37,10 @@ Our analysis spans multiple database tables:
 
 ## 🧮 Analytical Challenges Tackled
 
-1. **Total Order Count**: `SELECT COUNT(order_id) FROM orders;`
+1. **Total Order Count**:
+      `SELECT COUNT(order_id) FROM orders;`
 2. **Revenue Calculation**: 
-   ```sql
-   SELECT ROUND(SUM(order_details.quantity * pizzas.price), 2) AS total_sales
-   FROM order_details
-   JOIN pizzas ON pizzas.pizza_id = order_details.pizza_id;
+      `SELECT ROUND(SUM(order_details.quantity * pizzas.price), 2) AS total_sales
+       FROM order_details
+       JOIN pizzas ON pizzas.pizza_id = order_details.pizza_id;
 
